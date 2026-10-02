@@ -1,0 +1,15 @@
+import { chromium } from 'playwright-core';
+const b = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' });
+const p = await b.newPage({ viewport: { width: 1440, height: 900 } });
+await p.goto('http://localhost:4500/', { waitUntil: 'networkidle' }); await p.waitForTimeout(800);
+await p.screenshot({ path: 'lab/bar-home.png', clip: { x: 0, y: 0, width: 1440, height: 160 } });
+const workTop = await p.evaluate(() => document.getElementById('work').getBoundingClientRect().top + scrollY);
+await p.evaluate(y => scrollTo(0, y + 400), workTop); await p.waitForTimeout(300);
+await p.mouse.move(700, 450); await p.mouse.wheel(0, -60); await p.waitForTimeout(700);
+await p.screenshot({ path: 'lab/bar-work.png', clip: { x: 0, y: 0, width: 1440, height: 160 } });
+await p.goto('http://localhost:4500/service-areas/west-palm-beach/', { waitUntil: 'networkidle' }); await p.waitForTimeout(500);
+await p.screenshot({ path: 'lab/bar-city.png', clip: { x: 0, y: 0, width: 1440, height: 160 } });
+const m = await b.newPage({ viewport: { width: 390, height: 844 } });
+await m.goto('http://localhost:4500/', { waitUntil: 'networkidle' }); await m.waitForTimeout(500);
+await m.screenshot({ path: 'lab/bar-mobile.png', clip: { x: 0, y: 0, width: 390, height: 120 } });
+await b.close();

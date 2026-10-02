@@ -1,0 +1,12 @@
+import { chromium } from 'playwright-core';
+const b = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' });
+const p = await b.newPage({ viewport: { width: 1440, height: 900 } });
+await p.goto('http://localhost:4500', { waitUntil: 'networkidle' });
+const cur = () => p.evaluate(() => [...document.querySelectorAll('.rooms a')].filter(a => a.getAttribute('aria-current') === 'true').map(a => a.textContent));
+const top = await cur();
+await p.evaluate(() => scrollTo(0, document.getElementById('work').offsetTop + 300)); await p.waitForTimeout(400);
+const work = await cur();
+await p.evaluate(() => scrollTo(0, document.getElementById('work').offsetTop + 300)); await p.waitForTimeout(200);
+await p.mouse.move(700,450); await p.mouse.wheel(0,-150); await p.waitForTimeout(600); await p.click('.brand'); await p.waitForTimeout(1500);
+console.log(JSON.stringify({ atTop: top, inWork: work, afterLogoClickY: await p.evaluate(() => scrollY) }));
+await b.close();

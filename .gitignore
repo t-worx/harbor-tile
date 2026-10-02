@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+
+# generation sources (large PNGs); job IDs are kept in out/jobs.json
+out/*
+!out/jobs.json
+
+# raw client photos; the web-ready versions live in assets/
+photos/
+
+# test screenshots and output; the test scripts are kept
+lab/*
+!lab/*.mjs
+
+.DS_Store

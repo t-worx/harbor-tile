@@ -1,0 +1,12 @@
+import { chromium } from 'playwright-core';
+const b = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' });
+const p = await b.newPage({ viewport: { width: 1440, height: 900 } });
+await p.goto('http://localhost:4500/', { waitUntil: 'networkidle' });
+await p.click('[aria-controls="menu-services"]'); await p.waitForTimeout(600);
+await p.screenshot({ path: 'lab/menu-desktop.png', clip: { x: 0, y: 0, width: 1440, height: 420 } });
+const m = await b.newPage({ viewport: { width: 390, height: 844 } });
+await m.goto('http://localhost:4500/service-areas/west-palm-beach/', { waitUntil: 'networkidle' });
+await m.screenshot({ path: 'lab/menu-mobile-closed.png', clip: { x: 0, y: 0, width: 390, height: 90 } });
+await m.click('.menu-toggle'); await m.waitForTimeout(500);
+await m.screenshot({ path: 'lab/menu-mobile.png' });
+await b.close();

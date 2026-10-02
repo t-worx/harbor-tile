@@ -1,0 +1,101 @@
+/* Harbor main menu: dropdowns on desktop, a full panel on phones and tablets.
+   Loaded after each page's own styles. */
+
+.bar .menu { margin-left: auto; display: flex; align-items: center; }
+.menu__list { display: flex; align-items: center; gap: var(--sc-1); list-style: none; margin: 0; padding: 0; }
+.menu__group { position: relative; }
+.menu__link, .menu__trigger {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  min-height: 2.6rem; padding: 0 0.8rem; border-radius: var(--sc-r-pill);
+  font: 400 var(--sc-t-sm)/1 var(--sc-font-text); color: #C3D6D6; text-decoration: none;
+  background: none; border: 0; cursor: pointer;
+  transition: color 160ms var(--sc-ease-out), background-color 160ms var(--sc-ease-out);
+}
+.menu__link[aria-current="true"] { color: #fff; background: rgb(0 206 198 / .2); }
+.menu__trigger[aria-expanded="true"] { color: #fff; background: rgb(244 241 234 / .08); }
+@media (hover: hover) and (pointer: fine) { .menu__link:hover, .menu__trigger:hover { color: #fff; } }
+.menu__chev { width: 0.75rem; height: 0.75rem; transition: transform 200ms var(--sc-ease-out); }
+.menu__trigger[aria-expanded="true"] .menu__chev { transform: rotate(180deg); }
+
+.menu__sub {
+  position: absolute; top: calc(100% + 0.6rem); left: 50%; translate: -50% 0;
+  min-width: 15.5rem; list-style: none; margin: 0; padding: 0.5rem;
+  background: #0E2A33; border: 1px solid rgb(244 241 234 / .12); border-radius: var(--sc-r-md);
+  box-shadow: 0 24px 48px -20px rgb(0 0 0 / .55);
+  opacity: 0; visibility: hidden; transform: translateY(-6px);
+  transition: opacity 180ms var(--sc-ease-out), transform 220ms var(--sc-ease-out), visibility 0s linear 220ms;
+}
+.menu__trigger[aria-expanded="true"] + .menu__sub {
+  opacity: 1; visibility: visible; transform: none;
+  transition: opacity 180ms var(--sc-ease-out), transform 220ms var(--sc-ease-out), visibility 0s;
+}
+.menu__sub a {
+  display: block; padding: 0.7rem 0.85rem; border-radius: var(--sc-r-sm);
+  color: #E4EEEE; text-decoration: none; font-size: var(--sc-t-sm); white-space: nowrap;
+  transition: background-color 140ms var(--sc-ease-out), color 140ms var(--sc-ease-out);
+}
+.menu__sub a[aria-current="page"] { color: var(--sc-accent); }
+@media (hover: hover) and (pointer: fine) { .menu__sub a:hover { background: rgb(244 241 234 / .08); color: #fff; } }
+.menu__phone { display: none; }
+
+.menu-toggle {
+  display: none; width: 2.75rem; height: 2.75rem; margin-left: var(--sc-2);
+  border-radius: 50%; border: 1px solid rgb(244 241 234 / .22); background: none; color: var(--shell); cursor: pointer;
+  place-items: center;
+}
+.menu-toggle svg { width: 1.3rem; height: 1.3rem; overflow: visible; }
+.menu-toggle path { stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; transition: transform 240ms var(--sc-ease-out), opacity 160ms var(--sc-ease-out); transform-origin: 12px 12px; }
+.bar.menu-open .menu-toggle .l1 { transform: translateY(5px) rotate(45deg); }
+.bar.menu-open .menu-toggle .l2 { opacity: 0; }
+.bar.menu-open .menu-toggle .l3 { transform: translateY(-5px) rotate(-45deg); }
+
+/* ---------- phones and tablets: a panel under the bar ---------- */
+@media (max-width: 1080px) {
+  .menu-toggle { display: inline-grid; }
+  .bar .phone { margin-left: auto; }
+  .bar .menu {
+    position: fixed; left: 0; right: 0; top: var(--bar-h); margin: 0;
+    max-height: calc(100svh - var(--bar-h)); overflow-y: auto; overscroll-behavior: contain;
+    display: block; padding: var(--sc-4) var(--sc-gutter) var(--sc-7);
+    background: #0E2A33; border-top: 1px solid rgb(244 241 234 / .1);
+    box-shadow: 0 30px 50px -20px rgb(0 0 0 / .6);
+    opacity: 0; visibility: hidden; transform: translateY(-8px);
+    transition: opacity 200ms var(--sc-ease-out), transform 260ms var(--sc-ease-out), visibility 0s linear 260ms;
+  }
+  .bar.menu-open .menu { opacity: 1; visibility: visible; transform: none; transition: opacity 200ms var(--sc-ease-out), transform 260ms var(--sc-ease-out), visibility 0s; }
+  .menu__list { display: block; }
+  .menu__list > li { border-bottom: 1px solid rgb(244 241 234 / .1); }
+  .menu__link, .menu__trigger {
+    width: 100%; justify-content: space-between; min-height: 3.4rem; padding: 0 0.25rem;
+    border-radius: 0; font-size: var(--sc-t-lg); color: var(--shell);
+  }
+  .menu__link[aria-current="true"], .menu__trigger[aria-expanded="true"] { background: none; color: var(--sc-accent); }
+  .menu__chev { width: 1rem; height: 1rem; }
+  .menu__sub {
+    position: static; translate: none; min-width: 0; padding: 0 0 var(--sc-3); margin: 0;
+    background: none; border: 0; box-shadow: none; transform: none;
+    display: none; opacity: 1; visibility: visible;
+  }
+  .menu__trigger[aria-expanded="true"] + .menu__sub { display: block; }
+  .menu__sub a { padding: 0.75rem 0.25rem 0.75rem 1rem; font-size: var(--sc-t-base); white-space: normal; }
+  .menu__phone {
+    display: flex; justify-content: center; align-items: center; min-height: 3.2rem; margin-top: var(--sc-6);
+    border: 1px solid rgb(244 241 234 / .3); border-radius: var(--sc-r-pill);
+    color: var(--shell); text-decoration: none; font-weight: 500;
+  }
+}
+@media (max-width: 620px) { .menu-toggle { margin-left: var(--sc-2); } }
+@media (prefers-reduced-motion: reduce) {
+  .menu__sub, .bar .menu, .menu-toggle path, .menu__chev { transition: none !important; }
+}
+
+/* "Learn about ..." links inside the tour sections */
+.learn { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: var(--sc-4); font-size: var(--sc-t-sm); font-weight: 500; text-underline-offset: 0.22em; color: inherit; }
+.learn::after { content: "→"; transition: transform 160ms var(--sc-ease-out); }
+@media (hover: hover) and (pointer: fine) { .learn:hover::after { transform: translateX(3px); } }
+.learn-row { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; margin-top: var(--sc-4); font-size: var(--sc-t-sm); }
+.learn-row span { color: var(--sc-ink-soft); }
+.learn-row a { color: inherit; font-weight: 500; text-underline-offset: 0.22em; }
+
+/* screen-reader-only text (menu button label), defined here so every page has it */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
