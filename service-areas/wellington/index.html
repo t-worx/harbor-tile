@@ -23,25 +23,28 @@
 <link rel="stylesheet" href="../../scrollcraft.css">
 <link rel="stylesheet" href="../../site.css">
 
-<!-- schema:start -->
+
+<link rel="stylesheet" href="../../page.css">
+<link rel="stylesheet" href="../../nav.css">
+<!-- schema-markup:jsonld:start -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@graph": [
   {
-   "@type": [
-    "LocalBusiness",
-    "HomeAndConstructionBusiness"
-   ],
-   "@id": "https://harbortc.com/#business",
+   "@type": "HomeAndConstructionBusiness",
+   "@id": "https://harbortc.com/#organization",
    "name": "Harbor Tile & Carpet Cleaning",
    "alternateName": "Harbor",
+   "description": "Your Sparkle Specialists! Tile and grout, carpet, rugs, upholstery and yacht interior cleaning for Palm Beach County homes.",
    "slogan": "Your Sparkle Specialists!",
-   "description": "Locally owned tile and grout, carpet, area rug, upholstery, pet stain and odor, and yacht interior cleaning company in West Palm Beach, serving Palm Beach County from Deerfield Beach to Jupiter.",
    "url": "https://harbortc.com/",
    "logo": {
     "@type": "ImageObject",
+    "@id": "https://harbortc.com/#logo",
     "url": "https://harbortc.com/assets/logo.webp",
+    "contentUrl": "https://harbortc.com/assets/logo.webp",
+    "caption": "Harbor Tile & Carpet Cleaning",
     "width": 720,
     "height": 220
    },
@@ -65,102 +68,90 @@
    "areaServed": [
     {
      "@type": "City",
+     "@id": "https://harbortc.com/#place-jupiter",
      "name": "Jupiter",
      "sameAs": "https://en.wikipedia.org/wiki/Jupiter,_Florida",
      "containedInPlace": {
       "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
+      "@id": "https://harbortc.com/#place-palm-beach-county",
+      "name": "Palm Beach County",
       "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
      }
     },
     {
      "@type": "City",
+     "@id": "https://harbortc.com/#place-palm-beach-gardens",
      "name": "Palm Beach Gardens",
      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_Gardens,_Florida",
      "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+      "@id": "https://harbortc.com/#place-palm-beach-county"
      }
     },
     {
      "@type": "City",
+     "@id": "https://harbortc.com/#place-palm-beach",
      "name": "Palm Beach",
      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach,_Florida",
      "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+      "@id": "https://harbortc.com/#place-palm-beach-county"
      }
     },
     {
      "@type": "City",
+     "@id": "https://harbortc.com/#place-west-palm-beach",
      "name": "West Palm Beach",
      "sameAs": "https://en.wikipedia.org/wiki/West_Palm_Beach,_Florida",
      "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+      "@id": "https://harbortc.com/#place-palm-beach-county"
      }
     },
     {
      "@type": "City",
+     "@id": "https://harbortc.com/#place-wellington",
      "name": "Wellington",
      "sameAs": "https://en.wikipedia.org/wiki/Wellington,_Florida",
      "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+      "@id": "https://harbortc.com/#place-palm-beach-county"
      }
     },
     {
      "@type": "City",
+     "@id": "https://harbortc.com/#place-boynton-beach",
      "name": "Boynton Beach",
      "sameAs": "https://en.wikipedia.org/wiki/Boynton_Beach,_Florida",
      "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+      "@id": "https://harbortc.com/#place-palm-beach-county"
      }
     },
     {
      "@type": "City",
+     "@id": "https://harbortc.com/#place-delray-beach",
      "name": "Delray Beach",
      "sameAs": "https://en.wikipedia.org/wiki/Delray_Beach,_Florida",
      "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+      "@id": "https://harbortc.com/#place-palm-beach-county"
      }
     },
     {
      "@type": "City",
+     "@id": "https://harbortc.com/#place-boca-raton",
      "name": "Boca Raton",
      "sameAs": "https://en.wikipedia.org/wiki/Boca_Raton,_Florida",
      "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+      "@id": "https://harbortc.com/#place-palm-beach-county"
      }
     },
     {
      "@type": "City",
+     "@id": "https://harbortc.com/#place-deerfield-beach",
      "name": "Deerfield Beach",
      "sameAs": "https://en.wikipedia.org/wiki/Deerfield_Beach,_Florida",
      "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+      "@id": "https://harbortc.com/#place-palm-beach-county"
      }
     },
     {
-     "@type": "GeoCircle",
-     "geoMidpoint": {
-      "@type": "GeoCoordinates",
-      "latitude": 26.70979,
-      "longitude": -80.06414
-     },
-     "geoRadius": "55000"
+     "@id": "https://harbortc.com/#place-palm-beach-county"
     }
    ],
    "openingHoursSpecification": [
@@ -178,29 +169,6 @@
      "closes": "18:00"
     }
    ],
-   "contactPoint": [
-    {
-     "@type": "ContactPoint",
-     "contactType": "customer service",
-     "telephone": "+1-561-301-1977",
-     "email": "service@harbortc.com",
-     "availableLanguage": "English",
-     "areaServed": "US-FL",
-     "hoursAvailable": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-       "Monday",
-       "Tuesday",
-       "Wednesday",
-       "Thursday",
-       "Friday",
-       "Saturday"
-      ],
-      "opens": "08:00",
-      "closes": "18:00"
-     }
-    }
-   ],
    "knowsAbout": [
     "Tile and grout cleaning",
     "Natural stone floor cleaning",
@@ -213,6 +181,26 @@
     "Pet stain and odor removal",
     "Yacht interior cleaning"
    ],
+   "sameAs": [
+    "https://www.facebook.com/harbortc/",
+    "https://www.instagram.com/harbortc/"
+   ],
+   "founder": [
+    {
+     "@id": "https://harbortc.com/#person-jennifer"
+    },
+    {
+     "@id": "https://harbortc.com/#person-jonny"
+    }
+   ],
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "customer service",
+     "telephone": "+1-561-301-1977",
+     "email": "service@harbortc.com"
+    }
+   ],
    "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Cleaning services",
@@ -220,53 +208,50 @@
      {
       "@type": "Offer",
       "itemOffered": {
-       "@id": "https://harbortc.com/#service-tile-grout"
+       "@id": "https://harbortc.com/tile-grout-cleaning/#service"
       }
      },
      {
       "@type": "Offer",
       "itemOffered": {
-       "@id": "https://harbortc.com/#service-carpet"
+       "@id": "https://harbortc.com/carpet-cleaning/#service"
       }
      },
      {
       "@type": "Offer",
       "itemOffered": {
-       "@id": "https://harbortc.com/#service-area-rug"
+       "@id": "https://harbortc.com/area-rug-cleaning/#service"
       }
      },
      {
       "@type": "Offer",
       "itemOffered": {
-       "@id": "https://harbortc.com/#service-upholstery"
+       "@id": "https://harbortc.com/upholstery-cleaning/#service"
       }
      },
      {
       "@type": "Offer",
       "itemOffered": {
-       "@id": "https://harbortc.com/#service-pet-stain-odor"
+       "@id": "https://harbortc.com/pet-stain-odor-removal/#service"
       }
      },
      {
       "@type": "Offer",
       "itemOffered": {
-       "@id": "https://harbortc.com/#service-yacht-interior"
+       "@id": "https://harbortc.com/yacht-interior-cleaning/#service"
       }
      }
     ]
-   },
-   "sameAs": [
-    "https://www.instagram.com/harbortc/",
-    "https://www.facebook.com/harbortc/"
-   ]
+   }
   },
   {
    "@type": "WebSite",
    "@id": "https://harbortc.com/#website",
    "url": "https://harbortc.com/",
    "name": "Harbor Tile & Carpet Cleaning",
+   "description": "Your Sparkle Specialists! Tile and grout, carpet, rugs, upholstery and yacht interior cleaning for Palm Beach County homes.",
    "publisher": {
-    "@id": "https://harbortc.com/#business"
+    "@id": "https://harbortc.com/#organization"
    },
    "inLanguage": "en-US"
   },
@@ -274,57 +259,21 @@
    "@type": "WebPage",
    "@id": "https://harbortc.com/service-areas/wellington/#webpage",
    "url": "https://harbortc.com/service-areas/wellington/",
-   "name": "Tile, Carpet & Upholstery Cleaning in Wellington, FL",
-   "description": "Tile and grout, carpet, area rug, upholstery, pet stain and yacht interior cleaning in Wellington, from a locally owned Palm Beach County company.",
+   "name": "Tile, Carpet & Upholstery Cleaning in Wellington, FL | Harbor",
+   "description": "Tile and grout, carpet, area rug, upholstery, pet stain and yacht interior cleaning in Wellington. 240 five-star Google reviews. Call (561) 301-1977.",
    "inLanguage": "en-US",
    "isPartOf": {
     "@id": "https://harbortc.com/#website"
    },
    "about": {
-    "@id": "https://harbortc.com/#business"
+    "@id": "https://harbortc.com/#organization"
    },
    "primaryImageOfPage": {
     "@id": "https://harbortc.com/service-areas/wellington/#primaryimage"
    },
+   "dateModified": "2026-10-02T11:30:06-04:00",
    "breadcrumb": {
     "@id": "https://harbortc.com/service-areas/wellington/#breadcrumb"
-   },
-   "mentions": [
-    {
-     "@id": "https://harbortc.com/#service-tile-grout"
-    },
-    {
-     "@id": "https://harbortc.com/#service-carpet"
-    },
-    {
-     "@id": "https://harbortc.com/#service-area-rug"
-    },
-    {
-     "@id": "https://harbortc.com/#service-upholstery"
-    },
-    {
-     "@id": "https://harbortc.com/#service-pet-stain-odor"
-    },
-    {
-     "@id": "https://harbortc.com/#service-yacht-interior"
-    }
-   ],
-   "potentialAction": [
-    {
-     "@type": "ContactAction",
-     "name": "Get a Personalized Quote",
-     "target": "https://harbortc.com/service-areas/wellington/#quote"
-    }
-   ],
-   "spatialCoverage": {
-    "@type": "City",
-    "name": "Wellington",
-    "sameAs": "https://en.wikipedia.org/wiki/Wellington,_Florida",
-    "containedInPlace": {
-     "@type": "AdministrativeArea",
-     "name": "Palm Beach County, Florida",
-     "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-    }
    },
    "speakable": {
     "@type": "SpeakableSpecification",
@@ -332,7 +281,10 @@
      "#answer"
     ]
    },
-   "mainEntity": {
+   "spatialCoverage": {
+    "@id": "https://harbortc.com/#place-wellington"
+   },
+   "hasPart": {
     "@id": "https://harbortc.com/service-areas/wellington/#faq"
    }
   },
@@ -341,9 +293,9 @@
    "@id": "https://harbortc.com/service-areas/wellington/#primaryimage",
    "url": "https://harbortc.com/assets/wellington-clean.webp",
    "contentUrl": "https://harbortc.com/assets/wellington-clean.webp",
+   "caption": "A Wellington equestrian estate study with a clean hand-knotted wool rug and a view of the paddocks",
    "width": 1920,
-   "height": 1084,
-   "caption": "A Wellington equestrian estate study with a clean hand-knotted wool rug and a view of the paddocks"
+   "height": 1084
   },
   {
    "@type": "BreadcrumbList",
@@ -358,646 +310,21 @@
     {
      "@type": "ListItem",
      "position": 2,
-     "name": "Service areas"
-    },
-    {
-     "@type": "ListItem",
-     "position": 3,
-     "name": "Wellington",
+     "name": "Tile, Carpet & Upholstery Cleaning in Wellington, FL",
      "item": "https://harbortc.com/service-areas/wellington/"
     }
    ]
   },
   {
-   "@type": "Service",
-   "@id": "https://harbortc.com/#service-tile-grout",
-   "name": "Tile & Grout Cleaning",
-   "serviceType": "Tile and grout cleaning",
-   "description": "Machine agitation and hot-water extraction that lift soil, grease and soap scum out of tile and grout, with optional grout sealing, for kitchens, baths, entries and patios.",
-   "provider": {
-    "@id": "https://harbortc.com/#business"
-   },
-   "areaServed": [
-    {
-     "@type": "City",
-     "name": "Jupiter",
-     "sameAs": "https://en.wikipedia.org/wiki/Jupiter,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Palm Beach Gardens",
-     "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_Gardens,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Palm Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "West Palm Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/West_Palm_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Wellington",
-     "sameAs": "https://en.wikipedia.org/wiki/Wellington,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Boynton Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Boynton_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Delray Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Delray_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Boca Raton",
-     "sameAs": "https://en.wikipedia.org/wiki/Boca_Raton,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Deerfield Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Deerfield_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    }
-   ],
-   "url": "https://harbortc.com/tile-grout-cleaning/"
-  },
-  {
-   "@type": "Service",
-   "@id": "https://harbortc.com/#service-carpet",
-   "name": "Carpet Cleaning",
-   "serviceType": "Carpet cleaning",
-   "description": "Deep extraction for wall-to-wall carpet with a 7-step process that removes embedded soil and traffic lanes without leaving a sticky residue.",
-   "provider": {
-    "@id": "https://harbortc.com/#business"
-   },
-   "areaServed": [
-    {
-     "@type": "City",
-     "name": "Jupiter",
-     "sameAs": "https://en.wikipedia.org/wiki/Jupiter,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Palm Beach Gardens",
-     "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_Gardens,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Palm Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "West Palm Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/West_Palm_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Wellington",
-     "sameAs": "https://en.wikipedia.org/wiki/Wellington,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Boynton Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Boynton_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Delray Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Delray_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Boca Raton",
-     "sameAs": "https://en.wikipedia.org/wiki/Boca_Raton,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Deerfield Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Deerfield_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    }
-   ],
-   "url": "https://harbortc.com/carpet-cleaning/"
-  },
-  {
-   "@type": "Service",
-   "@id": "https://harbortc.com/#service-area-rug",
-   "name": "Area Rug Cleaning",
-   "serviceType": "Rug cleaning",
-   "description": "In-home or off-site cleaning for synthetic, wool, viscose, oriental and silk area rugs.",
-   "provider": {
-    "@id": "https://harbortc.com/#business"
-   },
-   "areaServed": [
-    {
-     "@type": "City",
-     "name": "Jupiter",
-     "sameAs": "https://en.wikipedia.org/wiki/Jupiter,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Palm Beach Gardens",
-     "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_Gardens,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Palm Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "West Palm Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/West_Palm_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Wellington",
-     "sameAs": "https://en.wikipedia.org/wiki/Wellington,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Boynton Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Boynton_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Delray Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Delray_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Boca Raton",
-     "sameAs": "https://en.wikipedia.org/wiki/Boca_Raton,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Deerfield Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Deerfield_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    }
-   ],
-   "url": "https://harbortc.com/area-rug-cleaning/"
-  },
-  {
-   "@type": "Service",
-   "@id": "https://harbortc.com/#service-upholstery",
-   "name": "Upholstery Cleaning",
-   "serviceType": "Upholstery cleaning",
-   "description": "Fabric-safe cleaning for sofas, sectionals, dining chairs, mattresses and outdoor cushions.",
-   "provider": {
-    "@id": "https://harbortc.com/#business"
-   },
-   "areaServed": [
-    {
-     "@type": "City",
-     "name": "Jupiter",
-     "sameAs": "https://en.wikipedia.org/wiki/Jupiter,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Palm Beach Gardens",
-     "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_Gardens,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Palm Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "West Palm Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/West_Palm_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Wellington",
-     "sameAs": "https://en.wikipedia.org/wiki/Wellington,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Boynton Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Boynton_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Delray Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Delray_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Boca Raton",
-     "sameAs": "https://en.wikipedia.org/wiki/Boca_Raton,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Deerfield Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Deerfield_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    }
-   ],
-   "url": "https://harbortc.com/upholstery-cleaning/"
-  },
-  {
-   "@type": "Service",
-   "@id": "https://harbortc.com/#service-pet-stain-odor",
-   "name": "Pet Stain & Odor Removal",
-   "serviceType": "Pet stain and odor removal",
-   "description": "Enzyme treatment and UV detection for pet stains and odors in carpet, rugs, upholstery and tile.",
-   "provider": {
-    "@id": "https://harbortc.com/#business"
-   },
-   "areaServed": [
-    {
-     "@type": "City",
-     "name": "Jupiter",
-     "sameAs": "https://en.wikipedia.org/wiki/Jupiter,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Palm Beach Gardens",
-     "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_Gardens,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Palm Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "West Palm Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/West_Palm_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Wellington",
-     "sameAs": "https://en.wikipedia.org/wiki/Wellington,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Boynton Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Boynton_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Delray Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Delray_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Boca Raton",
-     "sameAs": "https://en.wikipedia.org/wiki/Boca_Raton,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Deerfield Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Deerfield_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    }
-   ],
-   "url": "https://harbortc.com/pet-stain-odor-removal/"
-  },
-  {
-   "@type": "Service",
-   "@id": "https://harbortc.com/#service-yacht-interior",
-   "name": "Yacht Interior Cleaning",
-   "serviceType": "Yacht interior cleaning",
-   "description": "Discreet cleaning for salons, staterooms, carpet, upholstery and mattresses aboard, including Harbor Shield protection.",
-   "provider": {
-    "@id": "https://harbortc.com/#business"
-   },
-   "areaServed": [
-    {
-     "@type": "City",
-     "name": "Jupiter",
-     "sameAs": "https://en.wikipedia.org/wiki/Jupiter,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Palm Beach Gardens",
-     "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_Gardens,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Palm Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "West Palm Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/West_Palm_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Wellington",
-     "sameAs": "https://en.wikipedia.org/wiki/Wellington,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Boynton Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Boynton_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Delray Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Delray_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Boca Raton",
-     "sameAs": "https://en.wikipedia.org/wiki/Boca_Raton,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    },
-    {
-     "@type": "City",
-     "name": "Deerfield Beach",
-     "sameAs": "https://en.wikipedia.org/wiki/Deerfield_Beach,_Florida",
-     "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County, Florida",
-      "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
-     }
-    }
-   ],
-   "url": "https://harbortc.com/yacht-interior-cleaning/"
-  },
-  {
    "@type": "FAQPage",
    "@id": "https://harbortc.com/service-areas/wellington/#faq",
+   "url": "https://harbortc.com/service-areas/wellington/",
+   "name": "Tile, Carpet & Upholstery Cleaning in Wellington, FL | Harbor",
+   "description": "Tile and grout, carpet, area rug, upholstery, pet stain and yacht interior cleaning in Wellington. 240 five-star Google reviews. Call (561) 301-1977.",
+   "isPartOf": {
+    "@id": "https://harbortc.com/#website"
+   },
    "mainEntity": [
-    {
-     "@type": "Question",
-     "name": "Who cleans tile, grout and carpet in Wellington?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Harbor Tile & Carpet Cleaning is a locally owned Palm Beach County company, based in West Palm Beach, that cleans tile and grout, carpet, area rugs, upholstery and mattresses in Wellington, removes pet stains and odors, and cleans yacht interiors. It has 240 five-star Google reviews, carries $1M+ in liability insurance and has served Palm Beach County for over 15 years."
-     }
-    },
     {
      "@type": "Question",
      "name": "Which Wellington neighborhoods does Harbor serve?",
@@ -1055,14 +382,83 @@
      }
     }
    ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://harbortc.com/tile-grout-cleaning/#service",
+   "name": "Tile & Grout Cleaning",
+   "url": "https://harbortc.com/tile-grout-cleaning/",
+   "provider": {
+    "@id": "https://harbortc.com/#organization"
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://harbortc.com/carpet-cleaning/#service",
+   "name": "Carpet Cleaning",
+   "url": "https://harbortc.com/carpet-cleaning/",
+   "provider": {
+    "@id": "https://harbortc.com/#organization"
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://harbortc.com/area-rug-cleaning/#service",
+   "name": "Area Rug Cleaning",
+   "url": "https://harbortc.com/area-rug-cleaning/",
+   "provider": {
+    "@id": "https://harbortc.com/#organization"
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://harbortc.com/upholstery-cleaning/#service",
+   "name": "Upholstery Cleaning",
+   "url": "https://harbortc.com/upholstery-cleaning/",
+   "provider": {
+    "@id": "https://harbortc.com/#organization"
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://harbortc.com/pet-stain-odor-removal/#service",
+   "name": "Pet Stain & Odor Removal",
+   "url": "https://harbortc.com/pet-stain-odor-removal/",
+   "provider": {
+    "@id": "https://harbortc.com/#organization"
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://harbortc.com/yacht-interior-cleaning/#service",
+   "name": "Yacht Interior Cleaning",
+   "url": "https://harbortc.com/yacht-interior-cleaning/",
+   "provider": {
+    "@id": "https://harbortc.com/#organization"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://harbortc.com/#person-jennifer",
+   "name": "Jennifer",
+   "jobTitle": "Owner",
+   "worksFor": {
+    "@id": "https://harbortc.com/#organization"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://harbortc.com/#person-jonny",
+   "name": "Jonny",
+   "jobTitle": "Owner",
+   "worksFor": {
+    "@id": "https://harbortc.com/#organization"
+   }
   }
  ]
 }
 </script>
-<!-- schema:end -->
-
-<link rel="stylesheet" href="../../page.css">
-<link rel="stylesheet" href="../../nav.css">
+<!-- schema-markup:jsonld:end -->
 </head>
 <body>
 

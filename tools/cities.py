@@ -2,11 +2,11 @@
 """Harbor city pages, written from one template (the West Palm Beach page).
 
 Run from the build folder:   python3 tools/cities.py
-then:                        python3 tools/schema.py && python3 tools/nav.py
+then:                        python3 tools/nav.py && python3 tools/schema.py
 
 Each city below becomes service-areas/<slug>/index.html. The head meta and the
-<main> are written from the data here; the schema and the menu are filled in by
-schema.py and nav.py, which import CITY_PAGES from this file. FAQ text here is
+<main> are written from the data here; the menu is filled in by nav.py (which
+imports CITY_PAGES from this file) and the structured data by schema.py, last. FAQ text here is
 the single source for both the visible questions and the FAQPage schema.
 
 West Palm Beach is the template and stays hand-written.
@@ -359,7 +359,8 @@ def build():
         towns = "\n".join(f"                  <option{' selected' if t == c['town'] else ''}>{esc(t)}</option>" for t in TOWNS)
         q = quote.replace("@@TOWNS@@", '<select name="town">\n' + towns + "\n                </select>")
         out = re.sub(r"<main>.*?</main>", lambda m: main_html(c).replace("@@QUOTE@@", q), out, count=1, flags=re.S)
-        assert "west-palm-beach" not in re.search(r"<head>.*?<!-- schema:start -->", out, re.S).group(0)
+        # the head above the structured data must not still point at West Palm Beach
+        assert "west-palm-beach" not in re.search(r"<head>.*?(?:<!-- schema-markup:jsonld:start -->|</head>)", out, re.S).group(0)
         f = ROOT / page["file"]
         f.parent.mkdir(parents=True, exist_ok=True)
         f.write_text(out)

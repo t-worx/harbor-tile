@@ -2,3 +2,20 @@ User-agent: *
 Allow: /
 
 Sitemap: https://harbortc.com/sitemap.xml
+
+# schema-markup:ai-crawlers:start
+# AI search and answer-engine crawlers may read the whole site (schema-markup skill).
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: Applebot-Extended
+Allow: /
+# schema-markup:ai-crawlers:end

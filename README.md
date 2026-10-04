@@ -14,8 +14,10 @@ the scroll-craft engine (`scrollcraft.js` / `scrollcraft.css`, not edited per pr
 ## Generators (run from this folder after changing a page)
 ```
 python3 tools/cities.py   # rebuild city pages from the West Palm Beach template
-python3 tools/schema.py   # JSON-LD structured data on every page
 python3 tools/nav.py      # header menu, footer towns and "near you" lists
+python3 tools/schema.py   # last: validated JSON-LD on every page, plus robots.txt,
+                          # llms.txt, llms-full.txt and sitemap.xml (schema-markup skill;
+                          # facts in schema.config.json)
 ```
 
 ## Preview

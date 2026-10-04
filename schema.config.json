@@ -1,0 +1,293 @@
+{
+  "_about": "Site profile for the schema-markup skill. Business facts moved here from the retired tools/schema.py (same values); everything else is read from the pages. null = not known.",
+  "site": {
+    "url": "https://harbortc.com",
+    "name": "Harbor Tile & Carpet Cleaning",
+    "language": "en-US",
+    "cleanUrls": true,
+    "framework": "static",
+    "exclude": [
+      "out",
+      "lab",
+      "tools",
+      "photos",
+      "assets",
+      "node_modules"
+    ],
+    "search": null,
+    "legacyBlockMarkers": [
+      [
+        "<!-- schema:start -->",
+        "<!-- schema:end -->"
+      ]
+    ],
+    "summarySelector": "#answer",
+    "summaryAnchor": "<section id=\"foyer\"[^>]*>.*?\n  </section>",
+    "templates": {
+      "summary": "<section class=\"sc-section ans-band\" data-sc-act=\"flow\" data-sc-drift=\"#F4F1EA\" aria-labelledby=\"answer-summary-h\">\n  <style>\n    .ans-band { padding-block: clamp(4rem, 8vw, 7rem); }\n    .ans-band .ans-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(2rem, 5vw, 5rem); align-items: start; }\n    .ans-band h2 { font-size: var(--sc-t-2xl); color: var(--navy); margin: 0; }\n    .ans-band p { font-size: var(--sc-t-lg); line-height: 1.6; margin: 0; color: var(--navy); }\n    @media (max-width: 760px) { .ans-band .ans-grid { grid-template-columns: 1fr; gap: var(--sc-5); } }\n  </style>\n  <div class=\"sc-wrap ans-grid\">\n    <h2 id=\"answer-summary-h\" class=\"display\">{question}</h2>\n    <p id=\"answer-summary\">{text}</p>\n  </div>\n</section>"
+    }
+  },
+  "business": {
+    "type": "HomeAndConstructionBusiness",
+    "niche": "contractor",
+    "name": "Harbor Tile & Carpet Cleaning",
+    "legalName": null,
+    "alternateName": "Harbor",
+    "slogan": "Your Sparkle Specialists!",
+    "description": "Your Sparkle Specialists! Tile and grout, carpet, rugs, upholstery and yacht interior cleaning for Palm Beach County homes.",
+    "logo": "/assets/logo.webp",
+    "image": "/assets/foyer-clean.webp",
+    "telephone": "(561) 301-1977",
+    "email": "service@harbortc.com",
+    "address": {
+      "street": "500 S Australian Ave #600",
+      "locality": "West Palm Beach",
+      "region": "FL",
+      "postalCode": "33401",
+      "country": "US"
+    },
+    "geo": {
+      "latitude": 26.70979,
+      "longitude": -80.06414,
+      "source": "OpenStreetMap Nominatim geocode (carried over from tools/schema.py)"
+    },
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=500+S+Australian+Ave+%23600+West+Palm+Beach+FL+33401",
+    "hours": [
+      {
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "hoursText": "Monday to Saturday, 8:00 AM to 6:00 PM. Closed Sunday.",
+    "areaServed": [
+      {
+        "name": "Jupiter",
+        "type": "City",
+        "sameAs": "https://en.wikipedia.org/wiki/Jupiter,_Florida",
+        "containedIn": {
+          "name": "Palm Beach County",
+          "type": "AdministrativeArea",
+          "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+        }
+      },
+      {
+        "name": "Palm Beach Gardens",
+        "type": "City",
+        "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_Gardens,_Florida",
+        "containedIn": {
+          "name": "Palm Beach County",
+          "type": "AdministrativeArea",
+          "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+        }
+      },
+      {
+        "name": "Palm Beach",
+        "type": "City",
+        "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach,_Florida",
+        "containedIn": {
+          "name": "Palm Beach County",
+          "type": "AdministrativeArea",
+          "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+        }
+      },
+      {
+        "name": "West Palm Beach",
+        "type": "City",
+        "sameAs": "https://en.wikipedia.org/wiki/West_Palm_Beach,_Florida",
+        "containedIn": {
+          "name": "Palm Beach County",
+          "type": "AdministrativeArea",
+          "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+        }
+      },
+      {
+        "name": "Wellington",
+        "type": "City",
+        "sameAs": "https://en.wikipedia.org/wiki/Wellington,_Florida",
+        "containedIn": {
+          "name": "Palm Beach County",
+          "type": "AdministrativeArea",
+          "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+        }
+      },
+      {
+        "name": "Boynton Beach",
+        "type": "City",
+        "sameAs": "https://en.wikipedia.org/wiki/Boynton_Beach,_Florida",
+        "containedIn": {
+          "name": "Palm Beach County",
+          "type": "AdministrativeArea",
+          "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+        }
+      },
+      {
+        "name": "Delray Beach",
+        "type": "City",
+        "sameAs": "https://en.wikipedia.org/wiki/Delray_Beach,_Florida",
+        "containedIn": {
+          "name": "Palm Beach County",
+          "type": "AdministrativeArea",
+          "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+        }
+      },
+      {
+        "name": "Boca Raton",
+        "type": "City",
+        "sameAs": "https://en.wikipedia.org/wiki/Boca_Raton,_Florida",
+        "containedIn": {
+          "name": "Palm Beach County",
+          "type": "AdministrativeArea",
+          "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+        }
+      },
+      {
+        "name": "Deerfield Beach",
+        "type": "City",
+        "sameAs": "https://en.wikipedia.org/wiki/Deerfield_Beach,_Florida",
+        "containedIn": {
+          "name": "Palm Beach County",
+          "type": "AdministrativeArea",
+          "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+        }
+      },
+      {
+        "name": "Palm Beach County",
+        "type": "AdministrativeArea",
+        "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida"
+      }
+    ],
+    "priceRange": null,
+    "foundingDate": null,
+    "knowsAbout": [
+      "Tile and grout cleaning",
+      "Natural stone floor cleaning",
+      "Cement and encaustic tile",
+      "Terrazzo",
+      "Carpet hot-water extraction",
+      "Area rug cleaning",
+      "Upholstery cleaning",
+      "Mattress cleaning",
+      "Pet stain and odor removal",
+      "Yacht interior cleaning"
+    ],
+    "licenses": [],
+    "sameAs": [
+      "https://www.facebook.com/harbortc/",
+      "https://www.instagram.com/harbortc/"
+    ],
+    "catalogName": "Cleaning services"
+  },
+  "founder": [
+    {
+      "name": "Jennifer",
+      "jobTitle": "Owner",
+      "image": "/assets/owners.webp",
+      "_note": "No surname is published on the site."
+    },
+    {
+      "name": "Jonny",
+      "jobTitle": "Owner",
+      "image": "/assets/owners.webp"
+    }
+  ],
+  "reviews": {
+    "source": "Google Business Profile (linked from the site); the site states '240 five-star Google reviews' but not the overall rating or total count",
+    "aggregate": null,
+    "markupOnPageTestimonials": false
+  },
+  "services": [
+    {
+      "id": "tile-grout",
+      "name": "Tile & Grout Cleaning",
+      "serviceType": "Tile and grout cleaning",
+      "description": "Machine agitation and hot-water extraction that lift soil, grease and soap scum out of tile and grout, with optional grout sealing, for kitchens, baths, entries and patios.",
+      "url": "/tile-grout-cleaning/"
+    },
+    {
+      "id": "carpet",
+      "name": "Carpet Cleaning",
+      "serviceType": "Carpet cleaning",
+      "description": "Deep extraction for wall-to-wall carpet with a 7-step process that removes embedded soil and traffic lanes without leaving a sticky residue.",
+      "url": "/carpet-cleaning/"
+    },
+    {
+      "id": "area-rug",
+      "name": "Area Rug Cleaning",
+      "serviceType": "Rug cleaning",
+      "description": "In-home or off-site cleaning for synthetic, wool, viscose, oriental and silk area rugs.",
+      "url": "/area-rug-cleaning/"
+    },
+    {
+      "id": "upholstery",
+      "name": "Upholstery Cleaning",
+      "serviceType": "Upholstery cleaning",
+      "description": "Fabric-safe cleaning for sofas, sectionals, dining chairs, mattresses and outdoor cushions.",
+      "url": "/upholstery-cleaning/"
+    },
+    {
+      "id": "pet-stain-odor",
+      "name": "Pet Stain & Odor Removal",
+      "serviceType": "Pet stain and odor removal",
+      "description": "Enzyme treatment and UV detection for pet stains and odors in carpet, rugs, upholstery and tile.",
+      "url": "/pet-stain-odor-removal/"
+    },
+    {
+      "id": "yacht-interior",
+      "name": "Yacht Interior Cleaning",
+      "serviceType": "Yacht interior cleaning",
+      "description": "Discreet cleaning for salons, staterooms, carpet, upholstery and mattresses aboard, including Harbor Shield protection.",
+      "url": "/yacht-interior-cleaning/"
+    }
+  ],
+  "pages": {
+    "/": {
+      "summaryQuestion": "Who is Harbor Tile & Carpet Cleaning?",
+      "summary": "Harbor Tile & Carpet Cleaning is a locally owned West Palm Beach company, run by Jennifer and Jonny, that cleans tile and grout, carpet, area rugs, upholstery and yacht interiors and removes pet stains and odors, from Deerfield Beach to Jupiter. It has 240 five-star Google reviews. Call or text (561) 301-1977, Monday to Saturday, 8:00 AM to 6:00 PM."
+    },
+    "/about-us/": {
+      "nodes": [
+        {
+          "@type": "Article",
+          "@id": "https://voyagemia.com/interview/meet-jennifer-and-jonny-of-harbor-tile-carpet-cleaning/#article",
+          "headline": "Meet Jennifer and Jonny of Harbor Tile & Carpet Cleaning",
+          "url": "https://voyagemia.com/interview/meet-jennifer-and-jonny-of-harbor-tile-carpet-cleaning/",
+          "datePublished": "2024-10-31",
+          "publisher": {
+            "@type": "Organization",
+            "name": "VoyageMIA",
+            "url": "https://voyagemia.com/"
+          },
+          "about": {
+            "@id": "https://harbortc.com/#organization"
+          }
+        }
+      ]
+    },
+    "/service-areas/west-palm-beach/": {
+      "spatialCoverage": "West Palm Beach"
+    },
+    "/service-areas/palm-beach/": {
+      "spatialCoverage": "Palm Beach"
+    },
+    "/service-areas/jupiter/": {
+      "spatialCoverage": "Jupiter"
+    },
+    "/service-areas/wellington/": {
+      "spatialCoverage": "Wellington"
+    },
+    "/service-areas/delray-beach/": {
+      "spatialCoverage": "Delray Beach"
+    },
+    "/service-areas/boynton-beach/": {
+      "spatialCoverage": "Boynton Beach"
+    }
+  }
+}
