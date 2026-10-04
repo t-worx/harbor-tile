@@ -2,6 +2,10 @@
   "headers": [
     {
       "source": "/(.*)",
+      "missing": [
+        { "type": "host", "value": "harbortc.com" },
+        { "type": "host", "value": "www.harbortc.com" }
+      ],
       "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
     }
   ]
