@@ -1,0 +1,13 @@
+node_modules
+out
+lab
+photos
+tools
+BRIEF.md
+PROMPTS.md
+README.md
+package.json
+package-lock.json
+.schema-markup
+schema.config.json
+schema.config.draft.json

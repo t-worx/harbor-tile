@@ -13,3 +13,8 @@ lab/*
 !lab/*.mjs
 
 .DS_Store
+.vercel
+
+# schema-markup skill: generated reports stay local; lastmod.json keeps real page dates
+.schema-markup/*
+!.schema-markup/lastmod.json
